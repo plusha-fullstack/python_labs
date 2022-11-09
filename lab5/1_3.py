@@ -26,6 +26,6 @@ for i in range(N):
 print(count)
 for i in range(len(A)):
     for j in range(len(A[i])):
-        print("\t%2d" % (A[i][j]), end=' ')
+        print("\t%4d" % (A[i][j]), end=' ')
     print()
 

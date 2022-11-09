@@ -1,5 +1,8 @@
 from random import randint
+"""
+Дана матрица размера M × N и целые числа K1 и K2 (1 ≤ K1 < K2 ≤ N). Поменять местами столбцы матрицы с номерами K1 и K2. 
 
+"""
 N = randint(7, 10) # столбцы
 M = randint(7, 10) # строки
 A = [[0]*M for i in range(N)]

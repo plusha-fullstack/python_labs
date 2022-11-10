@@ -1,0 +1,10 @@
+word = "АБВГДЕЖ А В"
+word = list(word)
+for i in range(len(word)):
+    if word[i] == 'А': # здесь кириллица
+        word[i] = 'В'
+    elif word[i] == 'В':
+        word[i] = 'А'
+
+word = ''.join(word)
+print(word)

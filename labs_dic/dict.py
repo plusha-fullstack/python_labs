@@ -16,12 +16,13 @@ while True:
         break
     tmp = ''
     for c in s:
-        if c == ' ':
+        if c == ' ' or c == '.' or c == ','  or c == '\n':
             if tmp.lower() in dictionary:
                 string += dictionary[tmp.lower()]
-                string += " "
+                string += c
             else:
                 string += tmp
+                string += c
             tmp = ''
         else:
             tmp += c
@@ -32,8 +33,3 @@ while True:
             string += tmp
         tmp = ''
     f_out.write(string)
-
-
-
-
-
